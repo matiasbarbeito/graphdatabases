@@ -1,0 +1,24 @@
+@base <http://matiasbarbeito.org/perfil.ttl> .
+
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ex: <http://ex.org/movie#> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+
+<#yo> rdf:type foaf:Person;
+	foaf:name "Matías Barbeito";
+	foaf:firstName "Matías";
+	foaf:surname "Barbeito";
+	foaf:birthday "12-30";
+	foaf:age 27;
+	foaf:gender "masculino"@es;
+	foaf:homepage <https://twitter.com/matiasbarbeito>;
+	foaf:based_near <http://sws.geonames.org/8285453/>;
+	foaf:img <https://pbs.twimg.com/profile_images/690609359643082752/X8dt1-s_.jpg>;
+	foaf:knows <http://aidanhogan.com/teaching/ba/labs/01/perfil.ttl#yo>, <http://www.jesuslaime.com#yo>, <http://nanamanrique.com/perfil.ttl#yo>, <https://jontierno.github.io/cursografosq/perfil.ttl#yo>;
+	foaf:interest wikidata:Q11424, wikidata:Q202833, wikidata:Q2736;
+	ex:likesMovie wikidata:Q104123, wikidata:Q47703, wikidata:Q72962 .
+	
+<> a foaf:Document ;
+	foaf:name "Perfil FOAF de Matías"@es;
+	foaf:primaryTopic <#yo> .
